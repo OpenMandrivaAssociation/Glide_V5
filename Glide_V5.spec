@@ -82,7 +82,7 @@ applications that use the 3Dfx Interactive Voodoo4 / Voodoo5 card.
 aclocal-1.7
 libtoolize --copy --force
 automake-1.7 -a
-autoconf-2.5x
+autoconf
 # Build for V5 with DRI
 %configure2_5x	--enable-fx-glide-hw=h5 \
 		--enable-fx-dri-build \
