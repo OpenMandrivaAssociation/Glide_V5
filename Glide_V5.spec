@@ -1,7 +1,7 @@
 Summary:	Glide runtime for 3Dfx Voodoo Banshee and Voodoo3 boards
 Name:		Glide_V5
 Version:	2002.04.10
-Release:	 %mkrel 3
+Release:	 %mkrel 4
 Epoch:		1
 
 Source0:	glide3x.2002.04.10.tar.bz2
