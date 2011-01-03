@@ -1,7 +1,7 @@
 Summary:	Glide runtime for 3Dfx Voodoo Banshee and Voodoo3 boards
 Name:		Glide_V5
 Version:	2002.04.10
-Release:	 %mkrel 4
+Release:	 %mkrel 5
 Epoch:		1
 
 Source0:	glide3x.2002.04.10.tar.bz2
@@ -35,7 +35,7 @@ License:	3dfx Glide General Public License
 Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 ExclusiveArch:	%{ix86} ia64 alpha x86_64
-BuildRequires:	X11-devel automake1.7 autoconf2.5
+BuildRequires:	X11-devel automake autoconf2.5
 URL:		http://glide.sourceforge.net/
 
 %description 
@@ -79,9 +79,9 @@ applications that use the 3Dfx Interactive Voodoo4 / Voodoo5 card.
 %patch54 -p2
 
 %build
-aclocal-1.7
+aclocal
 libtoolize --copy --force
-automake-1.7 -a
+automake -a
 autoconf
 # Build for V5 with DRI
 %configure2_5x	--enable-fx-glide-hw=h5 \
