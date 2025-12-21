@@ -35,6 +35,8 @@ License:	3dfx Glide General Public License
 Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 ExclusiveArch:	%{ix86} ia64 alpha x86_64
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	X11-devel automake autoconf2.5
 URL:		https://glide.sourceforge.net/
 
